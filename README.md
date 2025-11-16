@@ -35,7 +35,7 @@
 
 ```bash
 # 克隆仓库
-# git clone <repository-url>
+# git clone https://github.com/Hackercds/APITester.git
 # cd 接口自动化框架
 
 # 安装依赖
@@ -1380,7 +1380,7 @@ asyncio.run(stress_test())
 
 ## 许可证
 
-本项目采用MIT许可证。详情请查看LICENSE文件。
+本项目采用Apache许可证。详情请查看LICENSE文件。
 
 ## 更新日志
 
