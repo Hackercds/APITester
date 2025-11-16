@@ -197,6 +197,25 @@ asyncio.run(async_test())
 ### 环境要求
 
 - Python 3.8+
+
+### 命令行环境注意事项
+
+在Windows系统中，安装时可能会遇到编码相关问题，建议注意以下几点：
+
+1. **命令行环境选择**：
+   - 在PowerShell中可能会遇到`UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 10: illegal multibyte sequence`错误
+   - 推荐在Windows CMD命令提示符中执行安装命令，通常可以避免编码问题
+
+2. **安装方式**：
+   ```bash
+   # 在CMD中执行以下命令
+   pip install -e . --no-cache-dir
+   ```
+
+3. **常见问题解决**：
+   - 如果遇到编码错误，尝试切换到CMD环境
+   - 确保Python环境的默认编码设置为UTF-8
+   - 可以考虑直接使用依赖包而不进行安装：`pip install -r requirements.txt`然后将项目目录添加到PYTHONPATH
 - 依赖包：requirements.txt中列出
 
 ### 安装步骤

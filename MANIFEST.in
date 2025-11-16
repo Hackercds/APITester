@@ -1,7 +1,6 @@
 # 包含配置文件
-include config/*.yaml
-include config/*.json
-include config/*.ini
+include config/*.py
+include config/__init__.py
 
 # 包含环境变量文件
 include .env.example
@@ -10,20 +9,18 @@ include .env.example
 include README.md
 include 架构设计.md
 
-# 包含示例文件
-recursive-include examples *.py *.json *.yaml
-
 # 包含测试文件
 recursive-include tests *.py
-recursive-include test_cases *.json *.yaml
+recursive-include test_cases *
 
 # 包含模板文件
-recursive-include templates *.html *.txt
+recursive-include templates *
 
 # 包含工具模块
 recursive-include utils *.py
 recursive-include common *.py
 
 # 包含主模块文件
-include api_auto_framework.py
 include main.py
+include verify_framework.py
+include test_imports.py
