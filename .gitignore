@@ -1,0 +1,62 @@
+# 虚拟环境
+venv/
+env/
+*.venv/
+.env/
+
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 构建和分发目录
+build/
+dist/
+*.egg/
+*.egg-info/
+*.dist-info/
+
+# 日志文件
+logs/
+*.log
+
+# 环境变量文件
+.env
+!.env.example
+
+# IDE和编辑器配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# 操作系统生成的文件
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# 测试结果和报告
+.pytest_cache/
+coverage/
+.coverage
+htmlcov/
+
+# 数据库文件
+*.sqlite
+*.sqlite3
+*.db
+
+# 其他
+MANIFEST
+*.bak
+*.tmp
+*.temp
