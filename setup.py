@@ -1,5 +1,5 @@
-from setuptools import setup, find_packages
-import os
+# -*- coding: utf-8 -*-
+from setuptools import setup
 
 setup(
     name='APITesterByHackercd',
@@ -7,18 +7,19 @@ setup(
     description='API自动化测试框架',
     author='Hackercd',
     author_email='Hackercd@foxmail.com',
-    packages=find_packages(include=['common', 'config', 'utils', 'testcase']),
-    py_modules=[os.path.splitext(os.path.basename(f))[0] for f in os.listdir('.') if f.endswith('.py') and not f.startswith('_')],
+    packages=['APITesterByHackercd'],
+    py_modules=['__init__'],
     install_requires=[
         'requests>=2.25.0',
         'pytest>=6.0.0',
-        'pydantic>=1.8.0',
         'python-dotenv>=0.19.0',
         'PyYAML>=6.0',
-        'openpyxl>=3.0.9',
-        'allure-pytest>=2.13.0'
+        'loguru>=0.5.3'
     ],
-    include_package_data=True,
-    zip_safe=False,
-    package_dir={'': '.'}
+    python_requires='>=3.7',
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent'
+    ]
 )
